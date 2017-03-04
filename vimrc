@@ -9,7 +9,7 @@ set showmode                    " show the current mode
 set clipboard=unnamed           " set clipboard to unnamed to access the system clipboard under windows
 set shiftwidth=4				" number of spaces to use for autoindenting
 set copyindent					" copy the previous indentation for autoindenting
-set nowrap						" don't wrap lines
+set wrap						" don't wrap lines
 set tabstop=4					" a tab is four spaces
 set ignorecase					" ignore case when searching
 set smartcase 					" ignore case if searchy patter is all lowercase, otherwise normal
