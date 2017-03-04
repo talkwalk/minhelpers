@@ -1,3 +1,4 @@
+echo "Hey whats up"
 cp ~/.vimrc ~/.vimrcbackup
 curl -s https://raw.githubusercontent.com/Tyler-Walker/vimrc/master/vimrc > ~/.vimrc
 mkdir -p ~/tjw017/usefulthings
