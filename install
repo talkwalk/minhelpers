@@ -1,9 +1,25 @@
-cp .vim* ~/
-git clone git clone git://github.com/slim-template/vim-slim.git ~/.vim/bundle
-git clone https://github.com/rodjek/vim-puppet.git ~/.vim/bundle
-git clone https://github.com/vim-scripts/vim-rubyformat ~/.vim/bundle
-git clone https://github.com/nathanaelkane/vim-indent-guides ~/.vim/bundle 
-git clone https://github.com/tpope/vim-fugitive ~/.vim/bundle 
-git clone https://github.com/shumphrey/fugitive-gitlab.vim ~/.vim/bundle
-git clone https://github.com/altercation/vim-colors-solarized ~/.vim/bundle
-git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle
+cp -r .vim* ~/
+if [ ! -d ~/.vim/bundle/slim-template ]; then
+git clone git://github.com/slim-template/vim-slim.git ~/.vim/bundle/slim-template
+fi
+if [ ! -d ~/.vim/bundle/vim-puppet ]; then
+git clone https://github.com/rodjek/vim-puppet.git ~/.vim/bundle/vim-puppet
+fi
+if [ ! -d ~/.vim/bundle/vim-rubyformat ]; then
+git clone https://github.com/vim-scripts/vim-rubyformat ~/.vim/bundle/vim-rubyformat
+fi
+if [ ! -d ~/.vim/bundle/vim-indent ]; then
+git clone https://github.com/nathanaelkane/vim-indent-guides ~/.vim/bundle/vim-indent
+fi
+if [ ! -d ~/.vim/bundle/vim-fugitive  ]; then
+git clone https://github.com/tpope/vim-fugitive ~/.vim/bundle/vim-fugitive 
+fi
+if [ ! -d ~/.vim/bundle/vim-fugitive-gitlab ]; then
+git clone https://github.com/shumphrey/fugitive-gitlab.vim ~/.vim/bundle/vim-fugitive-gitlab
+fi
+if [ ! -d ~/.vim/bundle/vim-colors-solarized ]; then
+git clone https://github.com/altercation/vim-colors-solarized ~/.vim/bundle/vim-colors-solarized
+fi
+if [ ! -d ~/.vim/bundle/vim-easymotion ]; then
+git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
+fi
