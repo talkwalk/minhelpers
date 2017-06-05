@@ -1,3 +1,0 @@
-echo "Hey whats up"
-cp ~/.vimrc ~/.vimrcbackup
-curl -s https://raw.githubusercontent.com/tyler-walker/vimrc/master/vimrc > ~/.vimrc
