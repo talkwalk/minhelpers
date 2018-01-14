@@ -23,7 +23,27 @@ fi
 if [ ! -d ~/.vim/bundle/vim-easymotion ]; then
 git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
 fi
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)
+      machine=Mac
+      xcode-select --install
+      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      brew doctor
+      brew install zsh zsh-completions git
+      curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+      chsh -s /usr/local/bin/zsh
+      curl -O https://bootstrap.pypa.io/get-pip.py
+      python3 get-pip.py --user
+      pip3 install awscli --upgrade --user
+    ;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+echo "Running on ${machine}"
+
 
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-
 \curl -sSL https://get.rvm.io | bash -s stable --rails
