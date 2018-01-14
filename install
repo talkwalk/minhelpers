@@ -25,7 +25,6 @@ git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymot
 fi
 unameOut="$(uname -s)"
 case "${unameOut}" in
-    Linux*)     machine=Linux;;
     Darwin*)
       machine=Mac
       xcode-select --install
@@ -36,10 +35,10 @@ case "${unameOut}" in
       chsh -s /usr/local/bin/zsh
       curl -O https://bootstrap.pypa.io/get-pip.py
       python3 get-pip.py --user
-      pip3 install awscli --upgrade --user
+      pip3 install awscli --upgrade --user;;
     ;;
     CYGWIN*)    machine=Cygwin;;
-    MINGW*)     machine=MinGw;;
+    MINGW*)     echo "You have made a horrible mistake. Find a better machine" machine=MinGw;;
     *)          machine="UNKNOWN:${unameOut}"
 esac
 echo "Running on ${machine}"
