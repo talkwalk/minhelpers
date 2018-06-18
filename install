@@ -1,4 +1,4 @@
--r .vim* ~/
+cp -r .vim* ~/
 if [ ! -d ~/.vim/bundle/slim-template ]; then
 git clone git://github.com/slim-template/vim-slim.git ~/.vim/bundle/slim-template
 fi
@@ -38,7 +38,10 @@ case "${unameOut}" in
       pip3 install awscli --upgrade --user;;
     CYGWIN*)    machine=Cygwin;;
     MINGW*)     echo "You have made a horrible mistake. Find a better machine" machine=MinGw;;
-    *)          machine="UNKNOWN:${unameOut}"
+    *)          
+      yum -y install zsh zsh-completions
+      curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+      chsh -s /usr/local/bin/zsh
 esac
 echo "Running on ${machine}"
 
