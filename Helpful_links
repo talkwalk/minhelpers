@@ -1,0 +1,51 @@
+Here is a list of helpful links for learning.
+
+Great Go Tutorial
+https://tour.golang.org/basics/1
+
+Mermaid Documentation
+https://mermaidjs.github.io/
+
+Mermaid Live Editor
+https://mermaidjs.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbkFbQ2hyaXN0bWFzXSAtLT58R2V0IG1vbmV5fCBCKEdvIHNob3BwaW5nKVxuQiAtLT4gQ3tMZXQgbWUgdGhpbmt9XG5DIC0tPnxPbmV8IERbTGFwdG9wXVxuQyAtLT58VHdvfCBFW2lQaG9uZV1cbkMgLS0-fFRocmVlfCBGW2ZhOmZhLWNhciBDYXJdXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ
+
+Showoff Documentation (Used for Creating Slide Shows using markdown with tons of
+features
+https://puppetlabs.github.io/showoff/
+
+  To Install, have ruby and gem installed. Then just `gem install showoff`
+
+Black Viper (Very minimized version of Win 10 
+  http://www.blackviper.com/service-configurations/black-vipers-windows-10-service-configurations/
+  A script to install can be found here
+	https://github.com/madbomb122/BlackViperScript
+
+Kubernetes training with tons of variety
+https://www.katacoda.com/courses/kubernetes/
+  Its free and great!
+
+For Secrets management
+https://learn.hashicorp.com/vault/
+
+For Understanding Microservice Networking
+https://learn.hashicorp.com/consul/
+
+For learning how to use Terraform the right way
+https://learn.hashicorp.com/Terraform/
+
+ENVOY
+  You use envoy to create what I like to call a service proxy.
+	It can eat some resources, but it is a very very effective utility
+	https://www.learnenvoy.io/
+
+Learn REVEL!!!! (The Go Web Framework)
+https://github.com/MatthiasHoldorf/golang-revel-tutorial
+
+Kafka (You need it as a good message streamer)
+https://kafka.apache.org/intro
+
+Rabbit MQ
+https://www.katacoda.com/javajon/courses/kubernetes-applications/rabbitmq
+
+Containerization Training!
+https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b
